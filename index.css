@@ -10,6 +10,7 @@
   --color-title: #181833;
   --color-green: #179d2e;
   --color-blue: #0177b8;
+  --color-hover-link: #4485a8;
   --color-yellow: #f5af23;
   --color-red: #f02e2c;
   
@@ -83,6 +84,7 @@ body {
   font-weight: 600;
   font-size: 28px;
   line-height: 32px;
+  color: var(--color-title)
 }
 
 .card__list {
@@ -101,6 +103,11 @@ body {
 
 .card__link {
   color: inherit;
+  transition: color 200ms;
+}
+
+.card__link:hover {
+  color: var(--color-hover-link)
 }
 
 /*#region changes colors*/
